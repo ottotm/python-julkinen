@@ -13,17 +13,14 @@ while True:
 
     #Ehtolause tarkistaa tunnuksen. Jos tunnus on väärä printtaa se tekstin ja lisää yritykset muuttujaan luvun. != tarkoittaa jos jokin ei ole sama.
     if syotettyTunnus != tunnusMuuttuja:
-        yritykset += 1
-        print("PIN-koodi: " + str(syotettyTunnus))
+        yritykset += 1     
         print("Väärin")
     else:
         if yritykset > 1:
-            #Tässä printataan teksti ja yritysten määrä.
-            print("PIN-koodi: " + str(syotettyTunnus))
-            print("Tunnus on oikein. Tarvitsit " + str(yritykset) + " yritystä")
+            #Tässä printataan teksti ja yritysten määrä.       
+            print("Oikein, tarvitsit " + str(yritykset) + " yritystä")
             #Tämä lopettaa while-silmukan
             break
-        else:
-            print("PIN-koodi: " + str(syotettyTunnus))
+        else: 
             print("Oikein, tarvitsit yhden yrityksen")
             break
